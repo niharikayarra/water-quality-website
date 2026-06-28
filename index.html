@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Water Quality Detector</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+  <h1>💧 Water Quality Detector</h1>
+  <p>Upload litmus paper image to check pH</p>
+
+  <input type="file" id="upload" accept="image/*">
+  
+  <button onclick="analyzeImage()">Analyze</button>
+
+  <canvas id="canvas" style="display:none;"></canvas>
+
+  <div class="result-box">
+    <h2 id="phValue">pH: --</h2>
+    <h3 id="status"></h3>
+    <p id="tips"></p>
+  </div>
+</div>
+
+</body>
+<script src="script.js"></script>
+</html>
+
